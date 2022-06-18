@@ -27,4 +27,11 @@ aggregated_waves, aggregated_infos = obj.getAggregated()
 submetered_waves, submetered_infos = obj.getSubmetered()
 ```
 
-
+## 數據格式介紹
+### Aggregated
+* aggregated_waves
+  * 有 <b>575</b> 個聚合負載的電壓、電流波型
+    取出第 n 個 聚合負載 的電壓、電流波型
+    ex: `voltage_wave, current_wave = aggregated_waves[n-1][0], aggregated_waves[n-1][1]`
+* aggregated_infos
+  *  
