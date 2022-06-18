@@ -54,7 +54,36 @@ submetered_waves, submetered_infos = obj.getSubmetered()
   <br>以下是第 n 個 聚合負載的資訊 : 
   <br>(備註: datas 裡面的 on 會放在list裡面是因為 Iron solder設備的on有兩個階段，所以會有兩個值，其他則為一個值)
   
-
+<table>
+    <tr>
+        <th>語法</th>
+        <th>數據格式</th>
+    </tr>
+    <tr>
+        <td>aggregated_infos[n-1]["<b>datas</b>"]</td>
+        <td>[ [[on], off, 設備1名稱], [[on], off, 設備m名稱] ]</td>
+    </tr>
+    <tr>
+        <td>aggregated_infos[n-1]["<b>labels</b>"]</td>
+        <td>[設備1名稱, 設備m名稱]</td>
+    </tr>
+    <tr>
+        <td>aggregated_infos[n-1]["<b>events</b>"]</td>
+        <td>[on、off的所有集合(不分on、off)]</td>
+    </tr>
+    <tr>
+        <td>aggregated_infos[n-1]["<b>sampling_frequency</b>"]</td>
+        <td>int: 30000</td>
+    </tr>
+    <tr>
+        <td>aggregated_infos[n-1]["<b>cost_time</b>"]</td>
+        <td>int: 波型總時間</td>
+    </tr>
+    <tr>
+        <td>aggregated_infos[n-1]["<b>house</b>"]</td>
+        <td>str: 從哪個房子收集到的</td>
+    </tr>    
+</table>
 
 <hr>
 
