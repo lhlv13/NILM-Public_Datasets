@@ -28,7 +28,8 @@ submetered_waves, submetered_infos = obj.getSubmetered()
 ```
 
 ## 數據格式介紹
-### Aggregated
+
+  ### Aggregated
 
 ``` 設備名稱 : 數量
 {'Fan': 101, 
@@ -85,7 +86,7 @@ submetered_waves, submetered_infos = obj.getSubmetered()
 
 <hr>
 
-## 數據格式介紹
+
 ### Submetered
 
 ```
