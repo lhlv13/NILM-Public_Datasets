@@ -28,14 +28,12 @@ submetered_waves, submetered_infos = obj.getSubmetered()
 ```
 
 ## 數據格式介紹
+### Aggregated
 
-  ### Aggregated
+
 
 <hr>
-
-
 ### Submetered
-
 ```
 {'Compact Fluorescent Lamp': 230,
  'Fridge': 108,
