@@ -29,6 +29,21 @@ submetered_waves, submetered_infos = obj.getSubmetered()
 
 ## 數據格式介紹
 ### Aggregated
+``` 設備名稱 : 數量
+{'Fan': 101, 
+ 'Vacuum': 98,
+ 'Coffee maker': 106,
+ 'Incandescent Light Bulb': 112,
+ 'Air Conditioner': 159,
+ 'Water kettle': 110,
+ 'Fridge': 79,
+ 'Fridge defroster': 88,
+ 'Compact Fluorescent Lamp': 103,
+ 'Hair Iron': 97,
+ 'Iron solder': 109,
+ 'Laptop': 90,
+ 'Blender': 51}
+```
 * aggregated_waves
   * 有 <b>575</b> 個聚合負載的電壓、電流波型
     <br>ex: 取出第 n 個 聚合負載 的電壓、電流波型
