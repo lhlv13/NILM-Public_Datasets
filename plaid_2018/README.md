@@ -83,8 +83,8 @@ submetered_waves, submetered_infos = obj.getSubmetered()
 </table>
 
 <hr>
+<br>
 ### Submetered
-
 ```
 {'Compact Fluorescent Lamp': 230,
  'Fridge': 108,
