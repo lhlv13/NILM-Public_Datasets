@@ -45,8 +45,38 @@ submetered_waves, submetered_infos = obj.getSubmetered()
  'Blender': 51}
 ```
 * aggregated_waves
-  * 有 <b>575</b> 個聚合負載的電壓、電流波型
-    <br>ex: 取出第 n 個 聚合負載 的電壓、電流波型
+  * 有 <b>575</b> 個聚合負載的電壓、電流波型。
+    <br>ex: 取出第 n 個 聚合負載 的電壓、電流波型 :
     <br>`voltage_wave, current_wave = aggregated_waves[n-1][0], aggregated_waves[n-1][1]`
 * aggregated_infos
-  *  
+  以下是第 n 筆資料的資訊 : 
+  <table>
+    <tr>
+        <th>語法</th>
+        <th>數據格式</th>
+    </tr>
+    <tr>
+        <td>aggregated_infos[n-1]["<b>datas</b>"]</td>
+        <td>[ [[on], off, 設備1名稱], [[on], off, 設備m名稱] ]</td>
+    </tr>
+    <tr>
+        <td>aggregated_infos[n-1]["<b>labels</b>"]</td>
+        <td>[設備1名稱, 設備n名稱]</td>
+    </tr>
+    <tr>
+        <td>aggregated_infos[n-1]["<b>events</b>"]</td>
+        <td>[on、off的所有集合(不分on、off)]</td>
+    </tr>
+    <tr>
+        <td>aggregated_infos[n-1]["<b>sampling_frequency</b>"]</td>
+        <td>int: 30000</td>
+    </tr>
+    <tr>
+        <td>aggregated_infos[n-1]["<b>cost_time</b>"]</td>
+        <td>int: 波型總時間</td>
+    </tr>
+    <tr>
+        <td>aggregated_infos[n-1]["<b>house</b>"]</td>
+        <td>str: 從哪個房子收集到的</td>
+    </tr>    
+</table>
