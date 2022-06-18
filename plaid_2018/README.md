@@ -1,7 +1,11 @@
 # PLAID 2018
 [下載網址](https://figshare.com/articles/dataset/PLAID_-_A_Voltage_and_Current_Measurement_Dataset_for_Plug_Load_Appliance_Identification_in_Households/10084619)
 
+## 下載項目
 
+
+## 使用方法 
+1. 將 `plaid_new_.hdf5` 、 `metadata_aggregated.json` 、 `metadata_submetered.json` 放在同一個資料夾。
 
 
 
