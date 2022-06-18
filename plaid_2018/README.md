@@ -44,12 +44,12 @@ submetered_waves, submetered_infos = obj.getSubmetered()
  'Laptop': 90,
  'Blender': 51}
 ```
-* aggregated_waves
+* <b>aggregated_waves</b>
   * 有 <b>575</b> 個聚合負載的電壓、電流波型。
     <br>ex: 取出第 n 個 聚合負載 的電壓、電流波型 :
     <br>`voltage_wave, current_wave = aggregated_waves[n-1][0], aggregated_waves[n-1][1]`
-* aggregated_infos
-  以下是第 n 筆資料的資訊 : 
+* <b>aggregated_infos</b>
+  <br>以下是第 n 個 聚合負載的資訊 : 
   <table>
     <tr>
         <th>語法</th>
