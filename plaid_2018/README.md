@@ -7,7 +7,7 @@
 ## 使用方法 
 1. 將 `plaid_new_.hdf5` 、 `metadata_aggregated.json` 、 `metadata_submetered.json` 放在同一個資料夾。
 2. 將 `plaid_2018.py` 內的路徑改成 `使用方法 1` 的資料夾路徑。
-  ```python
+  ```python=
   ########################################  修改成自己的路徑
 
   plaid_hdf5_path = r"D:\NILM\dataset\plaid\2018/plaid_new_.hdf5"
