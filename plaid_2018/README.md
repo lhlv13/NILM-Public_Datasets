@@ -50,6 +50,7 @@ submetered_waves, submetered_infos = obj.getSubmetered()
     <br>`voltage_wave, current_wave = aggregated_waves[n-1][0], aggregated_waves[n-1][1]`
 * <b>aggregated_infos</b>
   <br>以下是第 n 個 聚合負載的資訊 : 
+  <br>(備註: datas 裡面的 on 會放在list裡面是因為 Iron solder設備的on有兩個階段，所以會有兩個值，其他則為一個值)
   <table>
     <tr>
         <th>語法</th>
