@@ -33,7 +33,9 @@ submetered_waves, submetered_infos = obj.getSubmetered()
 
 
 <hr>
+
 ### Submetered
+
 ```
 {'Compact Fluorescent Lamp': 230,
  'Fridge': 108,
