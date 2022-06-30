@@ -11,6 +11,13 @@ import json
 import re
 import time
 
+########################################  修改成自己的路徑
+
+plaid_hdf5_path = r"D:\NILM\dataset\plaid\2018/plaid_new_.hdf5"
+aggregated_json_path=r"D:\NILM\dataset\plaid\2018/metadata_aggregated.json"
+submetered_json_path = r"D:\NILM\dataset\plaid\2018/metadata_submetered.json"
+
+########################################
 
 class ReadPLAID_2018():
     """
@@ -33,9 +40,9 @@ class ReadPLAID_2018():
     
     
     """
-    def __init__(self, plaid_hdf5_path=r"D:\NILM\dataset\plaid\2018/plaid_new_.hdf5", \
-                 aggregated_json_path=r"D:\NILM\dataset\plaid\2018/metadata_aggregated.json", \
-                 submetered_json_path = r"D:\NILM\dataset\plaid\2018/metadata_submetered.json"):
+    def __init__(self, plaid_hdf5_path = plaid_hdf5_path, \
+                       aggregated_json_path = aggregated_json_path, \
+                       submetered_json_path = submetered_json_path):
         self.__all_data = h5py.File(plaid_hdf5_path)
         self.__aggregated_path = aggregated_json_path
         self.__submetered_path = submetered_json_path
